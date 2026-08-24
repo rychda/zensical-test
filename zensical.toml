@@ -25,7 +25,7 @@ nav = [
 variant = "modern"
 # custom_dir = "overrides"
  favicon = "images/favicon.png"
-language = "en"
+language = "cs"
 features = [
   "announce.dismiss",
   # "content.action.edit",
