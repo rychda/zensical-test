@@ -55,7 +55,7 @@ features = [
   # "toc.integrate",
 ]
 
- logo = "images/favicon.png"
+ logo = "images/documentation.png"
 
 # [project.theme.icon]
 # logo = "lucide/smile"
