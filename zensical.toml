@@ -1,6 +1,6 @@
 [project]
 site_url = "https://www.example.com/"
-site_name = "Documentation"
+site_name = "Můj pokusný web se Zensical"
 # site_description = "Your project description"
 # site_author = "Your name"
 
@@ -11,7 +11,7 @@ site_name = "Documentation"
 # edit_uri = "edit/main/docs/"
 
 nav = [
-  { "Get started" = "index.md" },
+  { "Jak začít?" = "index.md" },
   { "Markdown in 5min" = [
     {"Cheatsheet" = "markdown.md"},
     {"MOJE" = "moje.md"},
