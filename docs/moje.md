@@ -1,7 +1,9 @@
 ---
-icon: simple/markdown
+icon: lucide/users
 ---
 
-# TOTO JE MOJE STRANKA
+# Členové týmu
 
-Ahoj
+* Dan
+* Tom
+* Kuba
