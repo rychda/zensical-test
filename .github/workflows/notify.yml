@@ -1,0 +1,31 @@
+name: Commit notification
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  send-email:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send email
+        uses: dawidd6/action-send-mail@v1
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "Nový commit na GitHubu"
+          to: daniel.rychter@email.cz
+          from: ${{ secrets.MAIL_USERNAME }}
+          body: |
+            Byl proveden nový commit do repozitáře.
+
+            Autor: ${{ github.actor }}
+            Commit: ${{ github.sha }}
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+      
